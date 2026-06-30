@@ -1,17 +1,22 @@
 export default {
   global: {
-    Name: 'Nombre del recurso educativo',
-    Description: 'Descripción del RED',
-    imagenBannerPrincipal: '@/assets/curso/portada/banner-principal.svg',
+    Name: 'Gestión de equipos informáticos',
+    Description:
+      'En este componente se aborda la temática relacionada con la gestión de equipos informáticos en cuanto al mantenimiento físico y lógico, teniendo en cuenta especificaciones técnicas y procedimientos.',
+    imagenBannerPrincipal: '@/assets/curso/portada/banner-principal.png',
     fondoBannerPrincipal: '@/assets/curso/portada/fondo-banner-principal.png',
     imagenesDecorativasBanner: [
       {
         clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
-        imagen: '@/assets/curso/portada/banner-principal-decorativo-1.svg',
+        imagen: '@/assets/curso/portada/banner-principal-decorativo-1.png',
       },
       {
         clases: ['banner-principal-decorativo-2', 'd-none', 'd-lg-block'],
-        imagen: '@/assets/curso/portada/banner-principal-decorativo-2.svg',
+        imagen: '@/assets/curso/portada/banner-principal-decorativo-2.png',
+      },
+      {
+        clases: ['banner-principal-decorativo-3', 'd-none', 'd-lg-block'],
+        imagen: '@/assets/curso/portada/banner-principal-decorativo-3.png',
       },
     ],
   },
@@ -31,27 +36,66 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Tema 1',
+        titulo: 'Mantenimiento de equipos informáticos',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Subtema 1',
+            titulo: 'Características',
             hash: 't_1_1',
+          },
+          {
+            numero: '1.2',
+            titulo: 'Tipos de mantenimiento',
+            hash: 't_1_2',
+          },
+          {
+            numero: '1.3',
+            titulo: 'Materiales y herramientas técnicas',
+            hash: 't_1_3',
           },
         ],
       },
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Tema 2',
+        titulo: 'Manuales técnicos',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '2.1',
+            titulo: 'Especificaciones',
+            hash: 't_2_1',
+          },
+          {
+            numero: '2.2',
+            titulo: 'Procedimientos',
+            hash: 't_2_2',
+          },
+        ],
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Tema 3',
+        titulo: 'Elementos de limpieza para mantenimiento de equipos',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '3.1',
+            titulo: 'Características',
+            hash: 't_3_1',
+          },
+          {
+            numero: '3.2',
+            titulo: 'Productos',
+            hash: 't_3_2',
+          },
+          {
+            numero: '3.3',
+            titulo: 'Usos',
+            hash: 't_3_3',
+          },
+        ],
       },
     ],
     subMenu: [
@@ -80,7 +124,7 @@ export default {
       {
         icono: 'fas fa-file-pdf',
         titulo: 'Descargar PDF',
-        download: 'downloads/dist.pdf',
+        download: 'downloads/233108_CF03_DU.zip',
       },
       {
         icono: 'fas fa-download',
@@ -96,14 +140,146 @@ export default {
   },
   glosario: [
     {
-      termino: 'Término',
-      significado: 'Definición',
+      termino: 'ATX',
+      significado:
+        'formato de placa base bastante moderno cuyas principales características son una mejor ventilación y accesibilidad, además del uso de clavijas mini-DIN y una gran integración de componentes.',
+    },
+    {
+      termino: 'Actualizaciones de <em>software</em>',
+      significado:
+        'las actualizaciones de <em>software</em> (también conocidas como parches) son fragmentos adicionales de <em>software</em> publicados por quienes producen los sistemas operativos y programas que usan nuestros equipos para mejorarlos.',
+    },
+    {
+      termino: 'Archivos temporales',
+      significado:
+        'un archivo temporal es creado por el <em>software</em> con el fin de contener información de forma transitoria durante el tiempo que nos encontramos creando un archivo estándar.',
+    },
+    {
+      termino: 'Bases de datos',
+      significado:
+        'conjunto ordenado de datos personales referentes a una persona física identificada o identificable, condicionados a criterios determinados, con independencia de la forma o modalidad de su creación, tipo de soporte, procesamiento, almacenamiento y organización.',
+    },
+    {
+      termino: 'BIOS',
+      significado:
+        '<em> Basic Input-Output System</em>, sistema básico de entrada-salida. Programa incorporado en un chip de la placa base que se encarga de realizar las funciones básicas de manejo y configuración del ordenador.',
+    },
+    {
+      termino: 'Caché',
+      significado:
+        'cualquier tipo de memoria "intermedia" entre dos aparatos, que acelera las comunicaciones y transmisiones de datos entre ellos. Por extensión, se aplica a la "caché de nivel 2", es decir, la que está en la placa base, entre el microprocesador y la memoria.',
+    },
+    {
+      termino: 'Código abierto',
+      significado:
+        'se refiere al código fuente del software que es abiertamente accesible y que puede ser cambiado y distribuido por cualquier persona.',
+    },
+    {
+      termino: 'CPU',
+      significado:
+        '<em> Central Processing Unit</em> o Unidad Central de Proceso. El "cerebro" de un ordenador; en general, sinónimo de microprocesador. En ocasiones se usa para referirse a toda la caja que contiene la placa base, el micro y las tarjetas de expansión.',
+    },
+    {
+      termino: 'Desfragmentación de disco',
+      significado:
+        'operación que a veces es necesaria para poner orden en los discos duros mecánicos en los que sueles escribir y reescribir con asiduidad, ya que sistemas operativos como Windows tienden a ir dejando fragmentos en ellos que con el paso del tiempo pueden ralentizarlos.',
+    },
+    {
+      termino: 'Fuente de alimentación',
+      significado:
+        'componente esencial de cualquier dispositivo electrónico ya que es ella quien se encarga de darle vida. ',
+    },
+    {
+      termino: '<em>Hardware</em>',
+      significado:
+        'conjunto de elementos físicos o materiales que constituyen una computadora o un sistema informático.',
+    },
+    {
+      termino: '<em>Malware</em>',
+      significado:
+        'tipo de <em>software</em> que tiene como objetivo dañar o infiltrar sin el consentimiento de su propietario en un sistema de información. Palabra que nace de la unión de los términos en inglés de <em>software</em> malintencionado: <em>malicious software</em>.',
+    },
+    {
+      termino: 'Procesador',
+      significado:
+        'cerebro del sistema, justamente procesa todo lo que ocurre en la PC y ejecuta todas las acciones que existen.',
+    },
+    {
+      termino: 'RAM',
+      significado:
+        '<em> Random Access Memory</em>, o Memoria de Acceso aleatorio. La memoria principal en la que se almacenan los datos durante el funcionamiento de un ordenador, la cual se borra al apagarlo. De diversos tipos (Fast Page, EDO, SRAM...) y conectores (SIMM, DIMM...).',
+    },
+    {
+      termino: '<em>Software</em>',
+      significado:
+        'programas de computadora, instrucciones o procedimientos que se ejecutan para operar y satisfacer las necesidades específicas de un usuario.',
+    },
+    {
+      termino: 'Desarrollo tecnológico',
+      significado:
+        'trabajo sistemático fundamentado en los conocimientos obtenidos por la investigación o la experiencia práctica, que se dirige a la fabricación de nuevos materiales, productos o dispositivos; a establecer nuevos procedimientos, sistemas y servicios, o a mejorar considerablemente los ya existentes.',
+    },
+    {
+      termino: 'Equipos de cómputo',
+      significado:
+        'dispositivo electrónico que almacena y procesa información para después mostrarla en una interfaz a la disposición del usuario, permite una interacción del hardware (parte tangible) con el software (parte intangible).',
+    },
+    {
+      termino: 'Licencia de <em>software</em>',
+      significado:
+        'contrato en donde el usuario acepta los términos y condiciones del fabricante para poder hacer uso del <em>software</em>.',
+    },
+    {
+      termino: 'Mantenimiento de <em>software</em>',
+      significado:
+        'es la modificación de un producto de software después de la entrega, para corregir errores, mejorar el rendimiento, u otros atributos.',
+    },
+    {
+      termino: 'Producto de <em>software</em>',
+      significado:
+        'se refiere al sistema (código fuente), documentación asociada y datos necesarios para el funcionamiento del software que se desarrolló y que se entrega a un cliente o usuario.',
+    },
+    {
+      termino: 'Pruebas de <em>software</em>',
+      significado:
+        'proceso de analizar un componente de <em>software</em> u operar un sistema que ayuda a detectar errores o defectos y a identificar la completitud o diferencias con respecto a los requerimientos y acuerdos establecidos con la finalidad de evaluar la calidad del <em>software</em>.',
+    },
+    {
+      termino: 'Redes de Computadores',
+      significado:
+        'también llamada red de ordenadores o red informática. Es un conjunto de equipos conectados por medio de cables, señales, ondas o cualquier otro método de transporte de datos, que comparten información (archivos), recursos (CD-ROM, impresoras, etc.).',
+    },
+    {
+      termino: 'Seguridad de la información',
+      significado:
+        'la capacidad de preservar la confidencialidad, integridad y disponibilidad de la información, así como la autenticidad, confiabilidad, trazabilidad y no repudio de la misma.',
+    },
+    {
+      termino: 'Servicio de autenticación',
+      significado:
+        'servicio de seguridad que verifica la identidad alegada por una entidad.',
+    },
+    {
+      termino: 'Sistema de información',
+      significado:
+        'conjunto de aplicaciones, servicios, activos de tecnología de la información u otros componentes que manejan información.',
+    },
+    {
+      termino: 'Sistema Operativo',
+      significado:
+        'un sistema operativo es el software o programa más importante que se ejecuta en un computador, nos permite usarlo y darle órdenes para que haga lo que necesitamos.',
     },
   ],
   referencias: [
     {
-      referencia: '',
+      referencia:
+        'Google.com. (s. f.). <em>Mantenimiento Preventivo 2</em>. Google.',
       link: '',
+    },
+    {
+      referencia:
+        'Incibe. (s. f.). <em>Glosario de términos de ciberseguridad. Guía de aproximación para el empresario</em>. Incibe.',
+      link: 'https://www.incibe.es/sites/default/files/contenidos/guias/doc/guia_glosario_ciberseguridad_metad.pdf',
     },
   ],
   creditos: [
@@ -112,13 +288,20 @@ export default {
       autores: [
         {
           nombre: 'Claudia Johanna Gómez Pérez',
-          cargo: 'Líder del Ecosistema',
+          cargo:
+            'Profesional 06. Responsable del Ecosistema Virtual de Recursos Educativos Digitales ',
           centro: 'Centro Agroturístico - Regional Santander',
         },
         {
-          nombre: 'Olga Constanza Bermúdez',
+          nombre: 'Olga Constanza Bermúdez Jaimes',
           cargo: 'Responsable de línea de producción Huila',
           centro: 'Dirección General',
+        },
+        {
+          nombre: 'Liliana Victoria Morales Gualdrón',
+          cargo: 'Responsable de línea de producción',
+          centro:
+            'Centro de Gestión de Mercados, Logística y Tecnologías de la Información - Regional Distrito Capital',
         },
       ],
     },
@@ -126,9 +309,49 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: '',
-          cargo: '',
-          centro: 'Centro XYZ - Regional XYZ',
+          nombre: 'Ronald Alexander Vacca Ascanio',
+          cargo: 'Experto Temático ',
+          centro:
+            'Centro de la Industria, la Empresa y los Servicios - Regional Norte de Santander',
+        },
+        {
+          nombre: 'Diego E. Acevedo Guevara',
+          cargo: 'Diseñador Instruccional ',
+          centro:
+            'Centro de la Industria, la Empresa y los Servicios - Regional Norte de Santander',
+        },
+        {
+          nombre: 'Andrés Felipe Velandia Espitia',
+          cargo: 'Asesoría metodológica y pedagógica',
+          centro: 'Centro de Diseño y Metrología - Regional Distrito Capital',
+        },
+        {
+          nombre: 'José Gabriel Ortiz Abella',
+          cargo: 'Corrector de estilo',
+          centro: 'Centro de Diseño y Metrología - Regional Distrito Capital',
+        },
+        {
+          nombre: 'Rafael Neftalí Lizcano Reyes',
+          cargo: 'Responsable Equipo Desarrollo Curricular',
+          centro:
+            'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+        },
+        {
+          nombre: 'Sandra Patricia Hoyos Sepúlveda',
+          cargo: 'Corrección de estilo',
+          centro: 'Centro de Diseño y Metrología - Regional Distrito Capital',
+        },
+        {
+          nombre: 'Gloria Lida Alzate Suarez',
+          cargo: 'Adecuador Instruccional',
+          centro:
+            'Centro de Gestión de Mercados, Logística y Tecnologías de la Información - Regional Distrito Capital',
+        },
+        {
+          nombre: 'Alix Cecilia Chinchilla Rueda',
+          cargo: 'Asesoría metodológica y pedagógica',
+          centro:
+            'Centro de Gestión de Mercados, Logística y Tecnologías de la Información - Regional Distrito Capital',
         },
       ],
     },
@@ -136,22 +359,34 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: '',
+          nombre: 'Yerson Fabián Zárate Saavedra',
           cargo: 'Diseñador de contenidos digitales',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
         {
-          nombre: '',
-          cargo: 'Desarrollador <i>full stack</i>',
+          nombre: 'Jesús Antonio Vecino Valero',
+          cargo: 'Diseñador web',
+          centro:
+            'Centro de Gestión de Mercados, Logística y Tecnologías de la Información - Regional Distrito Capital',
+        },
+        {
+          nombre: 'Jhon Jairo Urueta Álvarez',
+          cargo: 'Desarrollador <i>Full stack</i>',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
         {
-          nombre: '',
-          cargo: '',
+          nombre: 'Diego Fernando Velasco Guiza',
+          cargo: 'Desarrollador <i>Full stack</i>',
           centro:
-            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+            'Centro de Gestión de Mercados, Logística y Tecnologías de la Información - Regional Distrito Capital',
+        },
+        {
+          nombre: 'Lady Adriana Ariza Luque',
+          cargo: 'Animador y Producción audiovisual',
+          centro:
+            'Centro de Gestión de Mercados, Logística y Tecnologías de la Información - Regional Distrito Capital',
         },
       ],
     },
@@ -159,13 +394,50 @@ export default {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
         {
-          nombre: '',
+          nombre: 'Zuleidy María Ruiz Torres',
+          cargo: 'Validación de recursos educativos digitales',
+          centro:
+            'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+        },
+        {
+          nombre: 'Luis Gabriel Urueta Alvarez',
+          cargo: 'Validación de recursos educativos digitales',
+          centro:
+            'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+        },
+        {
+          nombre: 'Lina Marcela Pérez Manchego',
+          cargo: 'Validación de recursos educativos digitales',
+          centro:
+            'Centro de Gestión De Mercados, Logística y Tecnologías de la Información - Regional Distrito Capital',
+        },
+        {
+          nombre: 'Leyson Fabián Castaño Pérez',
+          cargo:
+            'Validación de recursos educativos digitales y vinculación LMS',
+          centro:
+            'Centro de Gestión De Mercados, Logística y Tecnologías de la Información - Regional Distrito Capital',
+        },
+        {
+          nombre: 'Ricardo Oliveros Zambrano',
           cargo: 'Validador de recursos educativos digitales',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
         {
-          nombre: '',
+          nombre: 'Aixa Natalia Sendoya Fernández',
+          cargo: 'Validador de recursos educativos digitales',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
+          nombre: 'Daniel Ricardo Mutis Gómez',
+          cargo: 'Evaluador para contenidos inclusivos y accesibles',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
+          nombre: 'Anyerson Wilfredo Pizo Ossa',
           cargo: 'Evaluador para contenidos inclusivos y accesibles',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
